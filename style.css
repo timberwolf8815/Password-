@@ -1,0 +1,103 @@
+
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: blue;
+    color: chartreuse;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: .5%;
+    min-height:20%;
+}
+
+p {
+    margin: 5px 0;
+} 
+
+h2 {
+    margin: 10px 0 20px;
+    text-align: center;    
+}
+
+input[type="checkbox"] {
+    margin-right: 0;
+}
+
+.container {
+    border: solid chartreuse 3px;
+    background-color: darkblue;
+    box-shadow: darkcyan;
+    padding:1%;
+    width:65%;
+        
+}
+
+.result-container {
+    background-color: darkred;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 1% 2%;
+    height:45%;
+    width: 99%;
+}
+
+.result-container #result {
+    word-wrap: break-word;
+    max-width: calc(100%-40px);    
+}
+
+.result-container .bnt {
+    font-size: 18px;
+    position: absolute;
+    top: 5%;
+    right: 20%;
+    height:30%;
+    width: 50%;    
+}
+
+.btn {
+    border: none;
+    color: rgb(5, 5, 5);
+    cursor: pointer;
+    font-size: 12px;
+    padding: 2.5% 2%;
+    background-color: rgb(252, 250, 247);       
+}
+
+.btnClipboard {
+    background-image: url("images/clipboard\ icon.png");
+    background-size: cover;
+}
+
+.btn-large {
+    display: block;
+    width: 100%;    
+}
+
+.setting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;    
+}
+
+.footer {
+    padding-top: 20%;
+
+}
+
+@media screen and (max-width: 400px) {
+    .result-container {
+        font-size: 14px;
+    }
+}
